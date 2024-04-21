@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+         
+}
+
+.logo{
+   margin-left: 5%;
+   margin-top: 4%;
+   color: white;
+   font-weight: 600;
+   font-size: x-large;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+.fondo-sesion{
+    background: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    height: 100vh;
+    
+}
+
+.form-sesion{
+    margin-top: 6%;
+    background-color: rgb(27, 27, 27);
+    width: 25%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    color: white;
+}
+
+.inputSesion {
+    border: 3px solid rgb(175, 61, 61);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    height: 40px;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 300px;
+    background-color: rgb(73, 72, 72);
+}
+
+
+
+
+
+.botonSesion{
+background-color: rgb(175, 61, 61);
+display: inline-block;
+color: white;
+height: 60px;
+width: 300px;
+margin: 10px 10px;
+padding: 0 10px;
+border-radius: 6px;
+font-size: 1.2rem;
+font-weight: 500;
+
+text-align: center;
+/* Agregar efecto de botón presionado */
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link{
+    text-decoration: none;
+    justify-content: start;
+    color: rgb(73, 72, 72);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px){
+    body{
+       
+            .logo{
+                font-size: 1rem;
+            }
+        }
+        .fondo-sesion{
+                flex-direction: column;
+                
+               
+               .form-sesion{
+                padding: 10px 10px; 
+                width: 80%;
+                margin-left: 45px;
+                input{
+                    width: 60%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                .terminos{
+                    width: 80%;
+                    margin:0 auto;
+                    font-size: 0.7rem;
+                }
+                .boton{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 70%;
+                    padding: 0.8rem 0.8rem;
+                    font-size: 0.8rem;
+                }
+                .ayuda{
+                    text-align: left;
+                    font-size: 0.8rem;
+                }
+               }
+               
+            }     
+}
