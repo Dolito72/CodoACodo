@@ -401,6 +401,80 @@ nav {
    /* border: 2px solid black; /* Borde de la barra */
 }
 
+/*----------------------seccion api---------------------------*/
+
+.api-section {
+    background-color: black;
+    color: white;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    border-bottom: solid 4px rgb(175, 61, 61);
+}
+
+.api-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.api-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.api-card {
+    background-color: #181419;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.api-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.api-card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.api-card-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.api-button {
+    background-color: rgb(175, 61, 61);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.api-button:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/*----------------------------------footer---------------------------*/
+
 footer{
     display: flex;
     justify-content: center;
@@ -869,6 +943,11 @@ footer{
         padding: 5px;
         text-align: center;
     }
+    .api-card {
+        width: 100%;
+    }
+
+
 }
 
    

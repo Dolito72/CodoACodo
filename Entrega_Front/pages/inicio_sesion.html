@@ -3,8 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
- 
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/sesionStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,36 +17,26 @@
     crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="../img/claqueta.png" />
   <title>Iniciar Sesión | CAC MOVIES</title>
-
-
 </head>
 
 <body>
-
-    
-
-
   <section class="fondo-sesion">
     <div class="logo">
       <a class="logo-link" href="../index.html">
         <img src="../img/logo.png" alt=""> CAC-Movies
-    </a>
-   
-
-
-      
+      </a>
     </div>
-    <form class="form-sesion" action="">
+    <form class="form-sesion" id="loginForm">
       <h2>Iniciar Sesion</h2>
-      <input class="inputSesion" type="text" placeholder="Email..." />
-      <input class="inputSesion" type="password" placeholder="Contraseña..." />
-
+      <input class="inputSesion" type="text" id="email" placeholder="Email..." />
+      <input class="inputSesion" type="password" id="password" placeholder="Contraseña..." />
       <input class="botonSesion" type="submit" value="Iniciar Sesión">
+      <p id="error-message" style="color:red;"></p>
       <a class="link" href="../pages/registro.html">Registrarse</a>
     </form>
-
   </section>
 
+  <script src="../js/login.js"></script>
 </body>
 
 </html>
