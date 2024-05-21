@@ -412,7 +412,7 @@ nav {
     justify-content: center;
     align-items: center;
    
-    border-bottom: solid 4px rgb(175, 61, 61);
+    border-bottom: solid 2px rgb(175, 61, 61);
 }
 
 .api-title {
@@ -422,24 +422,30 @@ nav {
     text-align: center;
 }
 
+.movie-card {
+    background-color: #181419;
+    border-radius: 3px;
+    padding: 2rem;
+    margin: 1rem; /* Reducido el margen para que se ajuste mejor */
+    width: calc(50% - 2rem); /* 50% del ancho del contenedor menos los márgenes */
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Asegura que el ancho incluya el relleno y el borde */
+    flex: 1; /* Ajusta el crecimiento de la tarjeta en el contenedor flex */
+}
+
 .api-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
     text-align: center;
 }
 
-.api-card {
-    background-color: #181419;
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 1rem;
-    width: 90%;
-    max-width: 600px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.api-card:hover {
+
+
+.movie-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
@@ -456,21 +462,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-.api-button {
-    background-color: rgb(175, 61, 61);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.api-button:hover {
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
 
 
 /*----------------------------------footer---------------------------*/
@@ -943,10 +935,10 @@ footer{
         padding: 5px;
         text-align: center;
     }
-    .api-card {
-        width: 100%;
+   
+    .movie-card {
+        width: calc(100% - 2rem); /* Ocupa todo el ancho del contenedor menos los márgenes */
     }
-
 
 }
 
